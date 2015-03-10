@@ -212,7 +212,6 @@ def CreateMatrix(scores,output_file):
     """
     #get uniq names from scores input
     uniq_names = sorted(list(set([i[0] for i in scores] + [i[1] for i in scores])))
-
     data_d = dict()
     count = 1
     for line in scores:
@@ -232,7 +231,8 @@ def CreateMatrix(scores,output_file):
         for j in uniq_names:
             score = ''
             for key in data_d:
-                if data_d[key]['ref'] == i and data_d[key]['query'] == j:
+                if (data_d[key]['ref'] == i and data_d[key]['query'] == j) or \
+                (data_d[key]['query'] == i and data_d[key]['ref'] == j):    
                     score = str(data_d[key]['score'])
             if i == j:
                 pairs.append('1')
