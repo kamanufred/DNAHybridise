@@ -22,7 +22,7 @@ The `DNAHybridise.py` is a parallel program that computes distance matrices when
 
 To compute the similarity matrix for a set of bacterial genomes contained in a directory named 'genomes' using 10 cores, run the command;  
    
-`mpirun -n 10 python DNAHybridise -g /path/to/genomes -o matrix.txt -c 100`
+`mpirun -n 10 python DNAHybridise.py -g /path/to/genomes -o matrix.txt -c 100`
 
  Run `python DNAHybridise.py -h` to see all the options.    
 
