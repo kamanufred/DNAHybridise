@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Copyright 2014 Frederick Kinyua Kamanu, Ph.D [frederick dot kamanu at gmail.com]
+# Copyright 2015 Frederick Kinyua Kamanu, Ph.D [frederick dot kamanu at gmail.com]
 # All Rights Reserved.
 
 #*****************************************************************************************
